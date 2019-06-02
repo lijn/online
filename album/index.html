@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <hml>
 	<head>
-		<title>The album</title>
+		<title>Portfolio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -9,6 +9,33 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <style type="text/css">
+
+      .bg-dark {
+          background-color: #bdbd96!important;
+      }
+      .navbar-dark .navbar-brand, .text-white, .text-muted {
+        color: #2B2B2B !important;
+      }
+
+      .card {
+        border-color: #bdbd96;
+      }
+      .card-text {
+        color: #bdbd96;
+      }
+
+      .card-img-top {
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .navbar-dark  .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}
+      .navbar-dark .navbar-toggler {
+        border-color: rgba(255,255,0,0.7);
+      }    
+
+    </style>
 	</head>
 
 	<body>
@@ -25,9 +52,7 @@
             <div class="col-sm-4 offset-md-1 py-4">
               <h4 class="text-white">Contact</h4>
               <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
+                <li><a href="mailto:jolijn.vhg@gmail.com" class="text-white">Email me</a></li>
               </ul>
             </div>
           </div>
@@ -37,7 +62,7 @@
         <div class="container d-flex justify-content-between">
           <a href="#" class="navbar-brand d-flex align-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-            <strong>Album</strong>
+            <strong>Portfolio</strong>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,81 +73,124 @@
 
     <main role="main">
 
-      <section class="jumbotron text-center">
+      <section class="text-center" style="padding-top: 30px">
         <div class="container">
-          <h1 class="jumbotron-heading">Album example</h1>
+          <h1>Portfolio</h1>
           <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-          <p>
+          <!--<p>
             <a href="#" class="btn btn-primary my-2">Main call to action</a>
             <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
+          </p>-->
         </div>
       </section>
 
-      <div class="album py-5 bg-light">
+      <div class="album py-5">
         <div class="container">
 
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-              	<a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" >
-                   <img class="card-img-top" src="https://unsplash.it/600.jpg?image=251" alt="Card image cap">
+              	<a href="images/foto1.jpg" data-toggle="lightbox" data-gallery="example-gallery" >
+                   <img class="card-img-top" src="images/foto1.jpg" alt="Card image cap">
                 </a>
                 <div class="card-body">
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                     
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
+                  
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" >
-                   <img class="card-img-top" src="https://unsplash.it/600.jpg?image=252" alt="Card image cap">
-                </a>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
 
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" >
-                   <img class="card-img-top" src="https://unsplash.it/600.jpg?image=253" alt="Card image cap">
+                <a href="images/foto2.jpg" data-toggle="lightbox" data-gallery="example-gallery" >
+                   <img class="card-img-top" src="images/foto2.jpg" alt="Card image cap">
                 </a>
                 <div class="card-body">
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                     
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
+                  
                 </div>
               </div>
             </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <a href="images/foto3.png" data-toggle="lightbox" data-gallery="example-gallery" >
+                   <img class="card-img-top" src="images/foto3.png" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <a href="images/foto4.png" data-toggle="lightbox" data-gallery="example-gallery" >
+                   <img class="card-img-top" src="images/foto4.png" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <a href="images/foto5.png" data-toggle="lightbox" data-gallery="example-gallery" >
+                   <img class="card-img-top" src="images/foto5.png" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <a href="images/foto8.png" data-toggle="lightbox" data-gallery="example-gallery" >
+                   <img class="card-img-top" src="images/foto8.png" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                  <p class="card-text">affiche</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <a href="images/foto6.jpg" data-toggle="lightbox" data-gallery="example-gallery" >
+                   <img class="card-img-top" src="images/foto6.jpg" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                  <p class="card-text">Iets van de kinderen</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <a href="images/foto7.jpg" data-toggle="lightbox" data-gallery="example-gallery" >
+                   <img class="card-img-top" src="images/foto7.jpg" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                  <p class="card-text">Schilderij</p>
+                  
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
 
     </main>
 
-    <footer class="text-muted">
+    <!--<footer class="text-muted">
       <div class="container">
         <p class="float-right">
           <a href="#">Back to top</a>
@@ -130,7 +198,7 @@
         <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
         <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
       </div>
-    </footer>
+    </footer>-->
 
 
 
